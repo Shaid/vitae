@@ -1,0 +1,13 @@
+{
+    "id": "jez-templeton",
+    "name": "Jez Templeton",
+    "role": "Full Stack Developer",
+    "contacts" : {
+        "email" : "jez@lostspiral.com",
+        "phone" : "+61 411 299 094"
+    },
+    "biblio" : {
+        "about" : ["What starts out as triumph soon becomes manipulated into a hegemony of defeat, leaving only a sense of unreality and the prospect of a new order."],        
+        "objective" : "Waffle moar."
+    }
+}

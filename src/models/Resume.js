@@ -2,6 +2,7 @@ var Backbone = require('backbone');
 var Debug = require('../utils/DebugUtil');
 
 var ResumeModel = Backbone.Model.extend({    
+    urlRoot: '/api/client/',
     defaults: {
         name: 'Jen Eric',
         role: 'Web Monkey'
@@ -10,7 +11,7 @@ var ResumeModel = Backbone.Model.extend({
         return this.toJSON();
     },
     initialize: function () {
-
+        this.fetch();
     }
 });
 

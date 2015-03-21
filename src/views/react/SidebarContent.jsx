@@ -1,5 +1,7 @@
 var React = require('react');
 
+var Icon = require('./Icon.jsx');
+var ArrayParagraph = require('./ArrayParagraph.jsx');
 /**
  * @jsx React.DOM
  */

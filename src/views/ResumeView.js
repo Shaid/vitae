@@ -9,6 +9,7 @@ var Sidebar = require('./react/Sidebar.jsx');
 
 var ResumeView = Backbone.View.extend({
     el: '.page__sidebar',
+    
     initialize: function(options) {
         this.listenTo(this.model, 'change', this.render);
     },

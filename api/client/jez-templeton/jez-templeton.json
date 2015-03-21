@@ -6,10 +6,10 @@
     "contacts" : {
         "email" : "jez@lostspiral.com",
         "phone" : "+61 411 299 094",
-        "github": "shaid",
+        "github": "shaid/vitae",
         "twitter" : "notjez"
     },   
-    "sidebar" : [
+    "header" : [
             {   
                 "title": "About Me",
                 "icon": "social-person",

@@ -4,10 +4,23 @@
     "role": "Full Stack Developer",
     "contacts" : {
         "email" : "jez@lostspiral.com",
-        "phone" : "+61 411 299 094"
-    },
-    "biblio" : {
-        "about" : ["What starts out as triumph soon becomes manipulated into a hegemony of defeat, leaving only a sense of unreality and the prospect of a new order."],        
-        "objective" : "Waffle moar."
-    }
+        "phone" : "+61 411 299 094",
+        "github": "shaid"
+    },   
+    "sidebar" : [
+            {   
+                "title": "About Me",
+                "icon": "social-person",
+                "body": [
+                    "What starts out as triumph soon becomes manipulated into a hegemony of defeat, leaving only a sense of unreality and the prospect of a new order."                    
+                ]
+            },  
+            {
+                "title": "What's all this then?",
+                "icon": "action-assignment-turned-in",
+                "body": [      
+                    "To write some overengineered resume viewer in an effort to learn React.js"
+                ]     
+            }        
+    ]
 }

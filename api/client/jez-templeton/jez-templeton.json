@@ -1,11 +1,13 @@
 {
     "id": "jez-templeton",
     "name": "Jez Templeton",
+    "avatar": "https://avatars0.githubusercontent.com/u/2906667",
     "role": "Full Stack Developer",
     "contacts" : {
         "email" : "jez@lostspiral.com",
         "phone" : "+61 411 299 094",
-        "github": "shaid"
+        "github": "shaid",
+        "twitter" : "notjez"
     },   
     "sidebar" : [
             {   
@@ -16,10 +18,11 @@
                 ]
             },  
             {
-                "title": "What's all this then?",
+                "title": "WTF is this?",
                 "icon": "action-assignment-turned-in",
                 "body": [      
-                    "To write some overengineered resume viewer in an effort to learn React.js"
+                    "It's my resume.",
+                    "Also, it's an attempt to write some massively over-engineered resume viewer as an effort to learn React."
                 ]     
             }        
     ]

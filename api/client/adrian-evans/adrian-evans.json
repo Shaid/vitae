@@ -1,14 +1,16 @@
 {
     "id": "adrian-evans",
     "name": "Adrian Evans",    
+    "avatar": "https://avatars2.githubusercontent.com/u/7938371",
     "contacts" : {
         "email" : "evade@hyperevade.net",
         "phone" : "+61 425 842 447",
-        "github" : "omgbob"
+        "github" : "omgbob",
+        "twitter" :"omgbob"
     },
     "sidebar" : [
             {   
-                "title": "About Meeee",
+                "title": "About Me",
                 "icon": "social-person",
                 "body": [
                     "I have a strong passion for developing and creating web sites and applications. I have strived to keep up with technology, industry trends and design practises as the internet and web development has evolved. I take pride in creating standards compliant code that works on any modern browser, and in using dynamic and exciting techniques to make the user experience easy and enjoyable.",
@@ -16,11 +18,33 @@
                 ]
             },  
             {
-                "title": "Objectivo!",
+                "title": "Objective",
                 "icon": "action-assignment-turned-in",
                 "body": [      
                     "To use my experience and skills in web development to contribute towards something worthwhile, and to further develop my web development skills, keeping up with web technologies as they continue to evolve."
                 ]     
             }        
+    ],
+    "employment" : [
+        {   
+            "role": "Senior Web Developer",
+            "employer" : { 
+                "name" : "Bureau of Meteorology",
+                "url" : "//bom.gov.au/",
+                "location" : "VIC"
+            },
+            "startDate" : "2010-10-01",
+            "endDate" : "now",
+            "responsibilities" : [
+            ],
+            "accomplishments" : [
+            ],
+            "achievements" : [
+            ]
+        }        
+    ],
+    "skills" : [
+    ],
+    "eductation" : [
     ]
 }

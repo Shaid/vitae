@@ -18,7 +18,7 @@ var Header = React.createClass({
                 </header>
                 
                 {resume.sidebar.map(function (content, index) {                                            
-                    return <HeaderContent content={content} />
+                    return <HeaderContent key={index} content={content} />
                 })}       
 
                 <section id="contact">

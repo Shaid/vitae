@@ -1,24 +1,24 @@
 var React = require('react');
 
-var Icon = require('./Icon.jsx');
-var ArrayParagraph = require('./ArrayParagraph.jsx');
+var Icon = require('./Helpers/Icon.jsx');
+var ArrayParagraph = require('./Helpers/ArrayParagraph.jsx');
 /**
  * @jsx React.DOM
  */
-var SidebarContent = React.createClass({    
+var HeaderContent = React.createClass({    
     render: function() {
         var content = this.props.content;
         
         return (
-                <article id={"sidebar-"+ content.title}>
+                <section id={"header-"+ content.title}>
                     <h2>
                         <Icon icon={content.icon} />
                         {content.title}
                     </h2>
                     <ArrayParagraph array={content.body} />
-                </article>
+                </section>
         );
     }
 });
 
-module.exports = SidebarContent;
+module.exports = HeaderContent;

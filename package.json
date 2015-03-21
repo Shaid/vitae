@@ -5,7 +5,7 @@
   "main": "index.js",
   "scripts": {
     "test": "gulp test",
-    "build": "gulp build"
+    "prepublish": "browserify -t reactify src/resume.js -o dist/js/resume.js"
   },
   "repository": {
     "type": "git",
@@ -21,6 +21,7 @@
     "backbone": "~1.1.2",
     "react": "~0.13.1",
     "jquery": "~2.1.3",
-    "reactify": "~1.1.0"
+    "reactify": "~1.1.0",
+    "browserify": "~9.0.3"
   }
 }

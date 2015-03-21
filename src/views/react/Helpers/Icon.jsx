@@ -12,7 +12,7 @@ var Icon = React.createClass({
         var iconClass = this.props.library + "-" + this.props.icon;        
         var classes = cx(this.props.library, iconClass);
         return (
-                <span className={classes}></span>
+            <span className={classes}></span>
         );
     }
 });

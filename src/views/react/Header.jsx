@@ -1,7 +1,27 @@
 var React = require('react');
 
-var HeaderContent = require('./HeaderContent.jsx');
+var ArrayParagraph = require('./Helpers/ArrayParagraph.jsx');
 var Icon = require('./Helpers/Icon.jsx');
+
+/**
+ * @jsx React.DOM
+ */
+var HeaderContent = React.createClass({    
+    render: function() {
+        var content = this.props.content;
+        
+        return (
+                <section id={"header-"+ content.title}>
+                    <h2>
+                        <Icon icon={content.icon} />
+                        {content.title}
+                    </h2>
+                    <ArrayParagraph array={content.body} />
+                </section>
+        );
+    }
+});
+
 /**
  * @jsx React.DOM
  */
@@ -17,7 +37,7 @@ var Header = React.createClass({
                     <h2>Resume</h2>
                 </header>
                 
-                {resume.sidebar.map(function (content, index) {                                            
+                {resume.header.map(function (content, index) {                                            
                     return <HeaderContent key={index} content={content} />
                 })}       
 

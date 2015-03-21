@@ -1,14 +1,15 @@
 var React = require('react');
 
 var Icon = require('../Helpers/Icon.jsx');
+
 /**
  * @jsx React.DOM
  */
-var Education = React.createClass({
+var EducationPanel = React.createClass({
     render: function () {    
         var education = this.props.data;
         return (
-            <section id="employment">
+            <section id="education">
                 <h2>
                     <Icon icon="communication-business" />
                     Education
@@ -18,4 +19,4 @@ var Education = React.createClass({
     }
 });
 
-module.exports = Education;
+module.exports = EducationPanel;

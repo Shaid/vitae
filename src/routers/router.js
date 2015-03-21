@@ -17,7 +17,8 @@ var Router = Backbone.Router.extend({
         Debug.log('Main view context follows:', resumeView);
     },
     default: function () {
-        return this.viewResume(this.DEFAULT_CLIENT);
+        this.navigate("!/resume/"+ this.DEFAULT_CLIENT, {trigger: true, replace: true});
+        //return this.viewResume(this.DEFAULT_CLIENT);
     }
 });
 

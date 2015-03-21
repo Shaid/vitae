@@ -5,17 +5,20 @@ var React = require('react');
 
 var Debug = require('../utils/DebugUtil');
 
-var Sidebar = require('./react/Sidebar.jsx');
+var Header = require('./react/Header.jsx');
+var ResumePage = require('./react/Resume.jsx');
 
 var ResumeView = Backbone.View.extend({
-    el: '.page__sidebar',
+    el: 'body',
     
     initialize: function(options) {
         this.listenTo(this.model, 'change', this.render);
     },
     render: function () {
-        React.render(
-            <Sidebar resume={this.model.serialize()} />,
+        document.title = this.model.get('name') + ' | Resume';
+        
+        React.render(            
+            <ResumePage resume={this.model.serialize()} />,
             this.el
         );    
     }

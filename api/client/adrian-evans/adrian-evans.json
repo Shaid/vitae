@@ -1,50 +1,275 @@
 {
     "id": "adrian-evans",
-    "name": "Adrian Evans",    
+    "name": "Adrian Evans",
     "avatar": "https://avatars2.githubusercontent.com/u/7938371",
-    "contacts" : {
-        "email" : "evade@hyperevade.net",
-        "phone" : "+61 425 842 447",
-        "github" : "omgbob",
-        "twitter" :"omgbob"
+    "contacts": {
+        "email": "evade@hyperevade.net",
+        "phone": "+61 425 842 447",
+        "github": "omgbob",
+        "twitter": "omgbob"
     },
-    "header" : [
-            {   
-                "title": "About Me",
-                "icon": "social-person",
-                "body": [
-                    "I have a strong passion for developing and creating web sites and applications. I have strived to keep up with technology, industry trends and design practises as the internet and web development has evolved. I take pride in creating standards compliant code that works on any modern browser, and in using dynamic and exciting techniques to make the user experience easy and enjoyable.",
-                    "As well as excelling in web development, I have experience with many other areas of IT, including programming in languages such as C, C++, Java and Python, software development, game development, database design and programming, networking, operating systems, and computer hardware."
-                ]
-            },  
-            {
-                "title": "Objective",
-                "icon": "action-assignment-turned-in",
-                "body": [      
-                    "To use my experience and skills in web development to contribute towards something worthwhile, and to further develop my web development skills, keeping up with web technologies as they continue to evolve."
-                ]     
-            }        
-    ],
-    "employment" : [
-        {   
-            "role": "Senior Web Developer",
-            "employer" : { 
-                "name" : "Bureau of Meteorology",
-                "url" : "//bom.gov.au/",
-                "location" : "VIC"
-            },
-            "startDate" : "2010-10-01",
-            "endDate" : "now",
-            "responsibilities" : [
-            ],
-            "accomplishments" : [
-            ],
-            "achievements" : [
+    "header": [
+        {
+            "title": "About Me",
+            "icon": "social-person",
+            "body": [
+                "I have a passion for developing and creating web sites and applications and I strive to keep up with technology, industry trends and design practises as the internet and web development continues to evolve.",
+                "I take pride in writing standards compliant code that works on any modern browser, and using dynamic and exciting techniques to make the user experience easy and enjoyable."
             ]
-        }        
+        }
     ],
-    "skills" : [
+    "employment": [
+        {
+            "role": "Senior Web Developer",
+            "employer": {
+                "name": "Bureau of Meteorology",
+                "url": "www.bom.gov.au",
+                "location": "VIC"
+            },
+            "startDate": "2010-10-01",
+            "endDate": "now",
+            "sections": [
+                {
+                    "name": "Responsibilities",
+                    "title": "I was responsible for ...",
+                    "items": [
+                        {
+                            "body": "Production of web applications in PHP and JavaScript"
+                        },
+                        {
+                            "body": "Development of RESTful APIs to support web and mobile applications"
+                        },
+                        {
+                            "body": "Mentoring and guidance of web development team"
+                        },
+                        {
+                            "body": "Refining development processes and standards"
+                        },
+                        {
+                            "body": "Facilitating rollout of GFE forecast upgrades"
+                        },
+                        {
+                            "body": "Development and maintenance of public web site"
+                        },
+                        {
+                            "body": "Providing technical advice and assistance on WCAG accessibility matters"
+                        }
+                    ]
+                },
+                {
+                    "name": "Accomplishments",
+                    "title": "I accomplished ...",
+                    "items": [
+                        {
+                            "title": "Bureau's mobile website",
+                            "url": "m.bom.gov.au",
+                            "body": "A responsive site designed for mobile phones and tablets that utilises a new data API driven by a custom PHP framework."
+                        },
+                        {
+                            "title": "Tide Predictions",
+                            "url": "www.bom.gov.au/australia/tides",
+                            "body": "Built with ExtJS and Openlayers to provide a map interface for users to select locations to view tide predictions, driven by PHP scripts that read data from XML sources."
+                        },
+                        {
+                            "title": "Meteye",
+                            "url": "www.bom.gov.au/australia/meteye",
+                            "body": "Award winning geospatial web application that displays current weather observations and various types of forecasts in an interactive map."
+                        }
+                        
+                    ]
+                }
+            ]
+        },
+        {
+            "role": "Web Developer",
+            "employer": {
+                "name": "O & C Marketing",
+                "url": "www.oandc.com.au",
+                "location": "VIC"
+            },
+            "startDate": "2009-06-01",
+            "endDate": "2010-10-01",
+            "sections": [
+                {
+                    "name": "Responsibilities",
+                    "title": "I was responsible for ...",
+                    "items": [
+                        {
+                            "body": "Application development in PHP and JavaScript"
+                        },
+                        {
+                            "body": "Web site design and development in XHTML and CSS"
+                        },
+                        {
+                            "body": "Developing custom Smarty templates for in-house CMS"
+                        },
+                        {
+                            "body": "Flash application and animation development"
+                        },
+                        {
+                            "body": "Server administration for Apache and Microsoft IIS platforms"
+                        },
+                        {
+                            "body": "Client liaison throughout life cycle of projects"
+                        },
+                        {
+                            "body": "Client training and ongoing site support"
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "role": "Developer",
+            "employer": {
+                "name": "ExitReality",
+                "url": "www.exitreality.com",
+                "location": "VIC"
+            },
+            "startDate": "2007-08-01",
+            "endDate": "2009-03-01",
+            "sections": [
+                {
+                    "name": "Responsibilities",
+                    "title": "I was responsible for ...",
+                    "items": [
+                        {
+                            "body": "Developing server-side scripts and applications in PHP and Python"
+                        },
+                        {
+                            "body": "Using JavaScript to produce dynamic interactive web applications"
+                        },
+                        {
+                            "body": "Developing UI components in HTML and PHP with heavy use of CSS and JavaScript"
+                        },
+                        {
+                            "body": "Developing public and internal web sites"
+                        },
+                        {
+                            "body": "Creating and managing relational databases in MySQL"
+                        },
+                        {
+                            "body": "Maintaining applications written in Java and C++"
+                        },
+                        {
+                            "body": "Scripting for 3D objects and worlds in VRML"
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "role": "Support Technician",
+            "employer": {
+                "name": "Connexus Internet Services",
+                "url": "www.connexus.net.au",
+                "location": "VIC"
+            },
+            "startDate": "2006-06-01",
+            "endDate": "2007-08-01",
+            "sections": [
+                {
+                    "name": "Responsibilities",
+                    "title": "I was responsible for ...",
+                    "items": [
+                        {
+                            "body": "Technical support for Residential and Business customers"
+                        },
+                        {
+                            "body": "ADSL, Dialup, Web and Domain Hosting support"
+                        },
+                        {
+                            "body": "Designing and maintaining in-house web sites"
+                        }
+                    ]
+                }
+            ]
+        }
     ],
-    "eductation" : [
-    ]
+    
+    "eductation": [
+    ],
+    "skills": [
+        {
+            "title": "Web Development",
+            "items": [
+                {
+                    "body": "HTML5 and CSS3"
+                },
+                {
+                    "body": "Sass and Compass"
+                },
+                {
+                    "body": "Responsive web design using Susy and Bootstrap grids"
+                },
+                {
+                    "body": "Web application development in JavaScript, PHP and Python"
+                },
+                {
+                    "body": "Cross-browser development and testing"
+                },
+                {
+                    "body": "Progressive enhancement and accessibility"
+                },
+                {
+                    "body": "JavaScript libraries such as Backbone.js, JQuery, ExtJS"
+                },
+                {
+                    "body": "Geospatial mapping with Openlayers, GeoExt, Leaflet"
+                },
+                {
+                    "body": "Experienced in working with XML data and XSLT"
+                },
+                {
+                    "body": "MySQL, SQLite, and PostgreSQL databases"
+                }
+            ]
+        },     
+        {
+            "title": "Software Development",
+            "items": [
+                {
+                    "body": "Source control using Git & GitHub"
+                },
+                {
+                    "body": "Agile development processes"
+                },
+                {
+                    "body": "Virtual machine development environments with Vagrant"
+                },
+                {
+                    "body": "Project planning tools such as JIRA and Trello"
+                },
+                {
+                    "body": "Continuous integration tools such as Jenkins"
+                },
+                {
+                    "body": "Build tools such as Gulp, Yeoman and Ant"
+                },
+                {
+                    "body": "Testing tools such as Codeception and PHPUnit"
+                },
+                {
+                    "body": "Bug tracking systems such as Bugzilla"
+                },
+                {
+                    "body": "Programming experience in Python, C, C++, Java and C#"
+                }
+            ]
+        },
+        {
+            "title": "Networking and Servers",
+            "items": [
+                {
+                    "body": "Experienced Linux user and part-time server administrator"
+                },
+                {
+                    "body": "Worked with LAMP stack and Node.js"
+                },
+                {
+                    "body": "Network setup, Routing, Firewalls"                
+                }
+            ]
+        }
+    ]   
 }

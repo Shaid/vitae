@@ -5,6 +5,8 @@ var Debug = require('../utils/DebugUtil');
 var Header = require('./Header.jsx');
 var MainBody = require('./MainBody.jsx');
 
+var ErrorPage = require('./ErrorPage.jsx');
+
 /**
  * @jsx React.DOM
  */
@@ -13,11 +15,14 @@ var Resume = React.createClass({
     fetchResume: function (client) {
         var url = this.props.urlBase + client;
         
-        this.getData(url, this.pushResumeToState);        
+        this.getData(url, this.pushResumeToState, this.invalidResume);        
     },
     pushResumeToState: function (resume) {
-        this.setState({resume: resume});  
+        this.setState({resume: resume, valid: true});  
     },    
+    invalidResume : function () {         
+        this.setState({valid: false});
+    },
     // router shit
     processRoute: function (route, params) {        
         if(typeof this[route] === 'function'){
@@ -31,6 +36,7 @@ var Resume = React.createClass({
      * @route "!/resume/:client"
      */
     viewResume: function (client) {                       
+        this.setState({client: client});
         this.fetchResume(client);        
     },
     // boilerplate
@@ -38,12 +44,18 @@ var Resume = React.createClass({
         this.props.router.on("route", this.processRoute);
         //setInterval(this.fetchResume, this.props.pollInterval);
     },
-    componentWillUnmount : function() {
+    componentWillUnmount: function() {
         this.props.router.off("route", this.processRoute);
+    },
+    shouldComponentUpdate: function (nextProps, nextState) {
+        if(nextState.client !== this.state.client){
+            return false;
+        }        
+        return true;
     },
     getInitialState: function () {
         return {
-            resume: {name: this.props.name}
+            valid: false
         };
     },
     getDefaultProps: function () {
@@ -55,23 +67,19 @@ var Resume = React.createClass({
     // main render stuff
     render: function () {
         var router = this.props.router;                
-        var resume = this.state.resume;
-
-        document.title = resume.name + ' | Resume';
         
-        if(resume.header !== undefined){        
+        if(this.state.valid === true){        
+            document.title = this.state.resume.name + ' | Resume';
             return (
                 <div className = "page">
-                    <Header resume = {resume} />
-                    <MainBody resume = {resume} />
+                    <Header resume = {this.state.resume} />
+                    <MainBody resume = {this.state.resume} />
                 </div>
             );
         }else{
             return (
                 <div className="page">
-                    <div className="page__content">
-                        <h1>Awaiting resume initialisation...</h1>
-                    </div>
+                    <ErrorPage client={this.state.client} error="Resume not found." />
                 </div>
             );
         }

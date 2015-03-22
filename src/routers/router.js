@@ -1,24 +1,19 @@
+var $ = require('jquery');
 var Backbone = require('backbone');
-
-var Debug = require('../utils/DebugUtil');
-var Resume = require('../models/Resume');
-
-var ResumeView = require('../views/ResumeView');
+Backbone.$ = $;
 
 var Router = Backbone.Router.extend({
     DEFAULT_CLIENT: 'jez-templeton',
+    client: null,
     routes: {
-        "!/resume/:name": "viewResume",
+        "!/resume/:client": "viewResume",
         "": "default"
     },
-    viewResume: function (name) {        
-        var resume = new Resume({id: name});
-        var resumeView = new ResumeView({model: resume});                               
-        Debug.log('Main view context follows:', resumeView);
+    viewResume: function (client) {                
+        this.client = client;
     },
     default: function () {
-        this.navigate("!/resume/"+ this.DEFAULT_CLIENT, {trigger: true, replace: true});
-        //return this.viewResume(this.DEFAULT_CLIENT);
+        this.navigate("!/resume/"+ this.DEFAULT_CLIENT, {trigger: true, replace: true});        
     }
 });
 

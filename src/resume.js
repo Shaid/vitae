@@ -7,14 +7,12 @@ var Debug = require('./utils/DebugUtil');
 var Router = require('./routers/router.js');
 var router = new Router();
 
-/*
-// disable back event in browser.
-$("body").on("click", ".back-button", function (event) {
-    event.preventDefault();
-    window.history.back();
-});
-*/
+var React = require('react');
+var ResumePage = require('./views/Resume.jsx');
 
-Backbone.history.start({pushState: false});
-
+React.render(            
+    <ResumePage router={router} />,
+    document.body            
+);   
     
+Backbone.history.start({pushState: false});

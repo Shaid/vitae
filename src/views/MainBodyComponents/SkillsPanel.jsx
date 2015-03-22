@@ -8,7 +8,7 @@ var DotPointer = require('../Helpers/DotPointer.jsx');
 var SkillsPanel = React.createClass({
     render: function () {        
         var skills = this.props.data;
-        console.log(skills);
+
         return (
             <section id="skills">
                 <h2>
@@ -16,7 +16,7 @@ var SkillsPanel = React.createClass({
                     Skills
                 </h2>                       
                 {skills.map(function (skill, index) {
-                    return (<article><DotPointer key={index} data={skill} /></article>)
+                    return (<article key={index}><DotPointer data={skill} /></article>)
                 })}      
             </section>
         );

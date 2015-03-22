@@ -30,7 +30,7 @@
             "endDate": "now",
             "sections": [
                 {
-                    "name": "Responsibilities",
+                    "name": "responsibilities",
                     "title": "I was responsible for ...",
                     "items": [
                         {
@@ -57,7 +57,7 @@
                     ]
                 },
                 {
-                    "name": "Accomplishments",
+                    "name": "accomplishments",
                     "title": "I accomplished ...",
                     "items": [
                         {
@@ -77,7 +77,45 @@
                         }
                         
                     ]
-                }
+                },
+                {
+                    "name": "achievements",
+                    "title": "I achieved ...",
+                    "items": []
+                },
+                {
+                    "name": "achievements-mobile",
+                    "title": "Mobile Website",
+                    "items": [
+                        {
+                            "body": "Finalist - 21st Annual AIMIA Awards (2015), Best Smartphone or Tablet Application (Gov/Non-Profit)"
+                        }, 
+                        {
+                            "body": "Winner - 2014 Design100 Australian Mobile & App Design Awards"
+                        }
+                    ]
+                },
+                {
+                    "name": "achievements-meteye",
+                    "title": "Meteye",
+                    "items": [
+                         {
+                            "body": "Winner - 2014 Geospatial World Technology Innovation Award (Meteorology)"
+                        }, 
+                        {
+                            "body": "Finalist - 2014 Asia-Pacific Spatial Excellence Awards"
+                        }, 
+                        {
+                            "body": "Winner - 2013 Victorian Spatial Excellence Awards, Technical Excellence Award"
+                        },
+                        {
+                            "body": "Highly Commended - 2013 Resilient Australia Award"
+                        }, 
+                        {
+                            "body": "Winner - 2012 eGovernment Excellence Award"
+                        }
+                    ]
+                }                
             ]
         },
         {
@@ -185,9 +223,50 @@
                 }
             ]
         }
-    ],
-    
-    "eductation": [
+    ],    
+    "education": [
+        {
+            "course": "Agency Agile",
+            "metadata": {                
+                "url": "www.agencyagile.com"
+            },
+            "date": "2015-02-01",            
+            "description": ["Agile workshop that included project scoping and roadmapping, cycle planning and the use of Kanban boards"]
+        },
+        {
+            "course": "Bachelor of Computer Science",
+            "metadata": {                
+                "venue": "LaTrobe University",
+                "location": "VIC"
+            },
+            "date": "2007-12-01",                        
+            "sections": [
+                {
+                    "name": "contents",
+                    "title": "Course Contents",
+                    "items": [
+                        {
+                            "body": "Java, C, C++ and C# programming"
+                        },
+                        {
+                            "body": "Game development and graphics programming"
+                        },
+                        {
+                            "body": "Client- and Server- side web development"
+                        },
+                        {
+                            "body": "Database design and programming"
+                        },
+                        {
+                            "body": "Software Engineering"
+                        },
+                        {
+                            "body": "Network design and engineering"
+                        }
+                    ]                    
+                }
+            ]            
+        }        
     ],
     "skills": [
         {

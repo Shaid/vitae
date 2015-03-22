@@ -10,8 +10,8 @@ var DotPointer = require('../Helpers/DotPointer.jsx');
 var EducationItem = React.createClass({     
     render: function () {        
         var course = this.props.course;
-        var sections = "";
         
+        var sections = "";        
         if(typeof course.sections !== 'undefined' && course.sections.length > 0){
             sections = course.sections.map(function (section, index) {
                 return (<DotPointer key={index} data={section} />)
@@ -43,7 +43,7 @@ var EducationPanel = React.createClass({
         return (
             <section id="education">
                 <h2>
-                    <Icon icon="communication-business" />
+                    <Icon icon="social-school" />
                     Education
                 </h2>
                         

@@ -35,7 +35,7 @@ var EmploymentPanel = React.createClass({
         return (
             <section id="employment">
                 <h2>
-                    <Icon icon="social-school" />
+                    <Icon icon="communication-business" />
                     Employment
                 </h2>
         

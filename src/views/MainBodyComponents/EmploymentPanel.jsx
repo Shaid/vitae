@@ -10,6 +10,7 @@ var DotPointer = require('../Helpers/DotPointer.jsx');
 var EmploymentItem = React.createClass({
     render: function () {        
         var employment = this.props.employment;
+                
         return (
             <article>
                 <h3>{employment.role}</h3>

@@ -12,7 +12,7 @@ var MainBody = React.createClass({
         var resume = this.props.resume;
         return (
             <div className="page__content">
-                <EmploymentPanel data={resume.employment} />
+                <EmploymentPanel data={resume.employment} />                
                 <EducationPanel data={resume.education} />
                 <SkillsPanel data={resume.skills} />
             </div>

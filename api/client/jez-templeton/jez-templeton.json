@@ -8,23 +8,23 @@
         "phone" : "+61 411 299 094",
         "github": "shaid/vitae",
         "twitter" : "notjez"
-    },   
+    },
     "header" : [
-            {   
+            {
                 "title": "About Me",
                 "icon": "social-person",
                 "body": [
-                    "What starts out as triumph soon becomes manipulated into a hegemony of defeat, leaving only a sense of unreality and the prospect of a new order."                    
+                    "What starts out as triumph soon becomes manipulated into a hegemony of defeat, leaving only a sense of unreality and the prospect of a new order."
                 ]
-            },  
+            },
             {
                 "title": "WTF is this?",
                 "icon": "action-assignment-turned-in",
-                "body": [      
+                "body": [
                     "It's my resume.",
                     "Also, it's an attempt to write some massively over-engineered resume viewer as an effort to learn React."
-                ]     
-            }        
+                ]
+            }
     ],
      "employment": [
         {
@@ -74,16 +74,11 @@
                             "body": "A responsive site designed for mobile phones and tablets that utilises a new data API driven by a custom PHP framework."
                         },
                         {
-                            "title": "Tide Predictions",
-                            "url": "www.bom.gov.au/australia/tides",
-                            "body": "Built with ExtJS and Openlayers to provide a map interface for users to select locations to view tide predictions, driven by PHP scripts that read data from XML sources."
+                            "title": "Defence Product Visualiser",
+                            "url": "",
+                            "body": "A tool that allows users to create customised card-based dashboards displaying a range of relevant weather products."
                         },
-                        {
-                            "title": "Meteye",
-                            "url": "www.bom.gov.au/australia/meteye",
-                            "body": "Award winning geospatial web application that displays current weather observations and various types of forecasts in an interactive map."
-                        }
-                        
+
                     ]
                 }
             ]
@@ -103,13 +98,10 @@
                     "title": "I was responsible for ...",
                     "items": [
                         {
-                            "body": "Application development in PHP and JavaScript"
+                            "body": "SaaS and application development in PHP and JavaScript"
                         },
                         {
-                            "body": "Web site design and development in XHTML and CSS"
-                        },
-                        {
-                            "body": "Developing custom Smarty templates for in-house CMS"
+                            "body": "Web site design and development in HTML and CSS"
                         },
                         {
                             "body": "Flash application and animation development"
@@ -122,6 +114,22 @@
                         },
                         {
                             "body": "Client training and ongoing site support"
+                        }
+                    ]
+                },
+                {
+                    "name": "Accomplishments",
+                    "title": "I accomplished ...",
+                    "items": [
+                        {
+                            "title": "Shop, Stock and Bill",
+                            "url": "",
+                            "body": "An intergrated online store and stock / inventory system. Allows integration with common accounting systems, creating a full end-to-end solution for the client."
+                        },
+                        {
+                            "title": "Client Management System",
+                            "url": "",
+                            "body": "A client management and marketing tool that allows targeted, customisable SMS and email marketing information to be delivered to hundreds of thousands of clients easily."
                         }
                     ]
                 }
@@ -194,7 +202,7 @@
             ]
         }
     ],
-    
+
     "education": [
     ],
     "skills": [
@@ -232,7 +240,7 @@
                     "body": "MySQL, SQLite, and PostgreSQL databases"
                 }
             ]
-        },                         
+        },
         {
             "title": "Software Development",
             "items": [
@@ -275,9 +283,9 @@
                     "body": "Worked with LAMP stack and Node.js"
                 },
                 {
-                    "body": "Network setup, Routing, Firewalls"                
+                    "body": "Network setup, Routing, Firewalls"
                 }
             ]
         }
-    ]   
+    ]
 }

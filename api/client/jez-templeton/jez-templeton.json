@@ -18,17 +18,18 @@
                 ]
             },
             {
-                "title": "WTF is this?",
+                "title": "What is this?",
                 "icon": "action-assignment-turned-in",
                 "body": [
                     "It's my resume.",
-                    "Also, it's an attempt to write some massively over-engineered resume viewer as an effort to learn React."
+                    "Also, it's an attempt to write some massively over-engineered resume viewer as an effort to learn React.",
+                    "@todo: Port this across to use redux and make it a universal node/javascript app."
                 ]
             }
     ],
      "employment": [
         {
-            "role": "Senior Web Developer | Defence & Aviation",
+            "role": "Digital Solutioneer",
             "employer": {
                 "name": "Bureau of Meteorology",
                 "url": "www.bom.gov.au",
@@ -39,22 +40,25 @@
             "sections": [
                 {
                     "name": "Responsibilities",
-                    "title": "I was responsible for ...",
+                    "title": "I am responsible for ...",
                     "items": [
                         {
-                            "body": "Production of web applications in PHP and JavaScript"
+                            "body": "Developing end-to-end, full-stack web application solutions for the Bureau's growing web presence"
+                        },
+                        {
+                            "body": "Building the app framework that underpins the current generation of Bureau web applications"
                         },
                         {
                             "body": "Development of RESTful APIs to support web and mobile applications"
                         },
                         {
-                            "body": "Mentoring and guidance of web development team"
+                            "body": "Redefining and redeveloping the service offering of the Defence and Aviation weather services"
+                        },
+                        {
+                            "body": "Mentoring and guidance of the web solutions team"
                         },
                         {
                             "body": "Refining development processes and standards"
-                        },
-                        {
-                            "body": "Facilitating rollout of GFE forecast upgrades"
                         },
                         {
                             "body": "Development and maintenance of public web site"
@@ -68,23 +72,22 @@
                     "name": "Accomplishments",
                     "title": "I accomplished ...",
                     "items": [
-                        {
-                            "title": "Bureau's mobile website",
-                            "url": "m.bom.gov.au",
-                            "body": "A responsive site designed for mobile phones and tablets that utilises a new data API driven by a custom PHP framework."
-                        },
-                        {
-                            "title": "Defence Product Visualiser",
-                            "url": "",
-                            "body": "A tool that allows users to create customised card-based dashboards displaying a range of relevant weather products."
-                        },
-
+                      {
+                          "title": "Bureau's mobile website",
+                          "url": "m.bom.gov.au",
+                          "body": "A responsive site designed for mobile phones and tablets that utilises a new data API driven by a custom PHP framework."
+                      },
+                      {
+                          "title": "Defence Product Visualiser",
+                          "url": "reg.bom.gov.au/defence",
+                          "body": "A tool that allows users to create customised card-based dashboards displaying a range of relevant weather products."
+                      }
                     ]
                 }
             ]
         },
         {
-            "role": "Web Developer",
+            "role": "Development Lead",
             "employer": {
                 "name": "O & C Marketing",
                 "url": "www.oandc.com.au",
@@ -97,11 +100,20 @@
                     "name": "Responsibilities",
                     "title": "I was responsible for ...",
                     "items": [
+                      {
+                          "body": "Leading the development team in this agency environment"
+                      },
                         {
-                            "body": "SaaS and application development in PHP and JavaScript"
+                          "body": "Heavy client/user focused workload"
                         },
                         {
-                            "body": "Web site design and development in HTML and CSS"
+                            "body": "SaaS and web application development in PHP and JavaScript"
+                        },
+                        {
+                            "body": "Web site design and development in XHTML and CSS"
+                        },
+                        {
+                            "body": "Developing custom Smarty templates for in-house CMS"
                         },
                         {
                             "body": "Flash application and animation development"
@@ -123,12 +135,12 @@
                     "items": [
                         {
                             "title": "Shop, Stock and Bill",
-                            "url": "",
+                            "url": "...",
                             "body": "An intergrated online store and stock / inventory system. Allows integration with common accounting systems, creating a full end-to-end solution for the client."
                         },
                         {
                             "title": "Client Management System",
-                            "url": "",
+                            "url": "...",
                             "body": "A client management and marketing tool that allows targeted, customisable SMS and email marketing information to be delivered to hundreds of thousands of clients easily."
                         }
                     ]
@@ -166,16 +178,13 @@
                         },
                         {
                             "body": "Maintaining applications written in Java and C++"
-                        },
-                        {
-                            "body": "Scripting for 3D objects and worlds in VRML"
                         }
                     ]
                 }
             ]
         },
         {
-            "role": "IT Project Supervisor",
+            "role": "Web / IT Project Supervisor",
             "employer": {
                 "name": "Mission Australia",
                 "url": "www.missionaustralia.org.au",
@@ -189,10 +198,10 @@
                     "title": "I was responsible for ...",
                     "items": [
                         {
-                            "body": "Technical support for Residential and Business customers"
+                            "body": "Mentoring jobseekers, assiting them in gaining real-world Web and IT skills"
                         },
                         {
-                            "body": "ADSL, Dialup, Web and Domain Hosting support"
+                            "body": "Producing dynamic webpages for non-profit and community organisations"
                         },
                         {
                             "body": "Designing and maintaining in-house web sites"
@@ -209,46 +218,52 @@
         {
             "title": "Web Development",
             "items": [
-                {
-                    "body": "HTML5 and CSS3"
-                },
-                {
-                    "body": "Sass and Compass"
-                },
-                {
-                    "body": "Responsive web design using Susy and Bootstrap grids"
-                },
-                {
-                    "body": "Web application development in JavaScript, PHP and Python"
-                },
-                {
-                    "body": "Cross-browser development and testing"
-                },
-                {
-                    "body": "Progressive enhancement and accessibility"
-                },
-                {
-                    "body": "JavaScript libraries such as Backbone.js, JQuery, ExtJS"
-                },
-                {
-                    "body": "Geospatial mapping with Openlayers, GeoExt, Leaflet"
-                },
-                {
-                    "body": "Experienced in working with XML data and XSLT"
-                },
-                {
-                    "body": "MySQL, SQLite, and PostgreSQL databases"
-                }
+              {
+                "body": "React / Redux"
+              },
+              {
+                "body": "Javascript / ES6"
+              },
+              {
+                  "body": "HTML5 and CSS3"
+              },
+              {
+                  "body": "Sass and Less"
+              },
+              {
+                  "body": "Responsive web design using Susy and Bootstrap grids (and flex-box)"
+              },
+              {
+                  "body": "Decoupled web application development in javascript / node, PHP"
+              },
+              {
+                  "body": "Cross-browser development and testing"
+              },
+              {
+                  "body": "Progressive enhancement, accessibility and content-first approach"
+              },
+              {
+                  "body": "JavaScript libraries such as Backbone.js, JQuery, ExtJS"
+              },
+              {
+                  "body": "Geospatial mapping with Openlayers, GeoExt, Leaflet"
+              },
+              {
+                  "body": "Experienced in working with XML data and XSLT"
+              },
+              {
+                  "body": "MySQL, SQLite, and PostgreSQL databases"
+              }
             ]
         },
         {
             "title": "Software Development",
             "items": [
                 {
-                    "body": "Source control using Git & GitHub"
+                    "body": "Leading agile/devops teams"
                 },
                 {
-                    "body": "Agile development processes"
+                  "body": "Certified (and practicing) ScrumMaster"
                 },
                 {
                     "body": "Virtual machine development environments with Vagrant"
@@ -263,28 +278,25 @@
                     "body": "Build tools such as Gulp, Yeoman and Ant"
                 },
                 {
-                    "body": "Testing tools such as Codeception and PHPUnit"
+                    "body": "Testing tools such as Karma/Mocha, Codeception and PHPUnit"
                 },
                 {
-                    "body": "Bug tracking systems such as Bugzilla"
-                },
-                {
-                    "body": "Programming experience in Python, C, C++, Java and C#"
+                    "body": "Programming experience in Perl, C++, Java"
                 }
             ]
         },
         {
-            "title": "Cloud Servers / Virtualization",
+            "title": "Cloud Servers / IaaS / Virtualization",
             "items": [
-                {
-                    "body": "Experienced Linux user and part-time server administrator"
-                },
-                {
-                    "body": "Worked with LAMP stack and Node.js"
-                },
-                {
-                    "body": "Network setup, Routing, Firewalls"
-                }
+              {
+                "body": "Application development and deployment using AWS and Rackspace"
+              },
+              {
+                  "body": "Continuous integration Scaling app workloads "
+              },
+              {
+                  "body": "Experience with VMWare vSphere and OpenStack"
+              }
             ]
         }
     ]

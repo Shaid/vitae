@@ -1,303 +1,267 @@
 {
-    "id": "jez-templeton",
-    "name": "Jez Templeton",
-    "avatar": "https://avatars0.githubusercontent.com/u/2906667",
-    "role": "Full Stack Developer",
-    "contacts" : {
-        "email" : "jez@lostspiral.com",
-        "phone" : "+61 411 299 094",
-        "github": "shaid/vitae",
-        "twitter" : "notjez"
-    },
-    "header" : [
-            {
-                "title": "About Me",
-                "icon": "social-person",
-                "body": [
-                    "What starts out as triumph soon becomes manipulated into a hegemony of defeat, leaving only a sense of unreality and the prospect of a new order."
-                ]
-            },
-            {
-                "title": "What is this?",
-                "icon": "action-assignment-turned-in",
-                "body": [
-                    "It's my resume.",
-                    "Also, it's an attempt to write some massively over-engineered resume viewer as an effort to learn React.",
-                    "@todo: Port this across to use redux and make it a universal node/javascript app."
-                ]
-            }
-    ],
-     "employment": [
-        {
-            "role": "Digital Solutioneer",
-            "employer": {
-                "name": "Bureau of Meteorology",
-                "url": "www.bom.gov.au",
-                "location": "VIC"
-            },
-            "startDate": "2012-07-01",
-            "endDate": "now",
-            "sections": [
-                {
-                    "name": "Responsibilities",
-                    "title": "I am responsible for ...",
-                    "items": [
-                        {
-                            "body": "Developing end-to-end, full-stack web application solutions for the Bureau's growing web presence"
-                        },
-                        {
-                            "body": "Building the app framework that underpins the current generation of Bureau web applications"
-                        },
-                        {
-                            "body": "Development of RESTful APIs to support web and mobile applications"
-                        },
-                        {
-                            "body": "Redefining and redeveloping the service offering of the Defence and Aviation weather services"
-                        },
-                        {
-                            "body": "Mentoring and guidance of the web solutions team"
-                        },
-                        {
-                            "body": "Refining development processes and standards"
-                        },
-                        {
-                            "body": "Development and maintenance of public web site"
-                        },
-                        {
-                            "body": "Providing technical advice and assistance on WCAG accessibility matters"
-                        }
-                    ]
-                },
-                {
-                    "name": "Accomplishments",
-                    "title": "I accomplished ...",
-                    "items": [
-                      {
-                          "title": "Bureau's mobile website",
-                          "url": "m.bom.gov.au",
-                          "body": "A responsive site designed for mobile phones and tablets that utilises a new data API driven by a custom PHP framework."
-                      },
-                      {
-                          "title": "Defence Product Visualiser",
-                          "url": "reg.bom.gov.au/defence",
-                          "body": "A tool that allows users to create customised card-based dashboards displaying a range of relevant weather products."
-                      }
-                    ]
-                }
-            ]
-        },
-        {
-            "role": "Development Lead",
-            "employer": {
-                "name": "O & C Marketing",
-                "url": "www.oandc.com.au",
-                "location": "VIC"
-            },
-            "startDate": "2008-03-01",
-            "endDate": "2012-06-01",
-            "sections": [
-                {
-                    "name": "Responsibilities",
-                    "title": "I was responsible for ...",
-                    "items": [
-                      {
-                          "body": "Leading the development team in this agency environment"
-                      },
-                        {
-                          "body": "Heavy client/user focused workload"
-                        },
-                        {
-                            "body": "SaaS and web application development in PHP and JavaScript"
-                        },
-                        {
-                            "body": "Web site design and development in XHTML and CSS"
-                        },
-                        {
-                            "body": "Developing custom Smarty templates for in-house CMS"
-                        },
-                        {
-                            "body": "Flash application and animation development"
-                        },
-                        {
-                            "body": "Server administration for Apache and Microsoft IIS platforms"
-                        },
-                        {
-                            "body": "Client liaison throughout life cycle of projects"
-                        },
-                        {
-                            "body": "Client training and ongoing site support"
-                        }
-                    ]
-                },
-                {
-                    "name": "Accomplishments",
-                    "title": "I accomplished ...",
-                    "items": [
-                        {
-                            "title": "Shop, Stock and Bill",
-                            "url": "...",
-                            "body": "An intergrated online store and stock / inventory system. Allows integration with common accounting systems, creating a full end-to-end solution for the client."
-                        },
-                        {
-                            "title": "Client Management System",
-                            "url": "...",
-                            "body": "A client management and marketing tool that allows targeted, customisable SMS and email marketing information to be delivered to hundreds of thousands of clients easily."
-                        }
-                    ]
-                }
-            ]
-        },
-        {
-            "role": "Freelance Developer",
-            "employer": {
-                "name": "Various clients",
-                "url": "www.lostspiral.com",
-                "location": "Melbourne, VIC"
-            },
-            "startDate": "2006-09-01",
-            "endDate": "2008-03-01",
-            "sections": [
-                {
-                    "name": "Responsibilities",
-                    "title": "I was responsible for ...",
-                    "items": [
-                        {
-                            "body": "Developing server-side scripts and applications in PHP and Python"
-                        },
-                        {
-                            "body": "Using JavaScript to produce dynamic interactive web applications"
-                        },
-                        {
-                            "body": "Developing UI components in HTML and PHP with heavy use of CSS and JavaScript"
-                        },
-                        {
-                            "body": "Developing public and internal web sites"
-                        },
-                        {
-                            "body": "Creating and managing relational databases in MySQL"
-                        },
-                        {
-                            "body": "Maintaining applications written in Java and C++"
-                        }
-                    ]
-                }
-            ]
-        },
-        {
-            "role": "Web / IT Project Supervisor",
-            "employer": {
-                "name": "Mission Australia",
-                "url": "www.missionaustralia.org.au",
-                "location": "VIC"
-            },
-            "startDate": "2003-12-01",
-            "endDate": "2006-09-01",
-            "sections": [
-                {
-                    "name": "Responsibilities",
-                    "title": "I was responsible for ...",
-                    "items": [
-                        {
-                            "body": "Mentoring jobseekers, assiting them in gaining real-world Web and IT skills"
-                        },
-                        {
-                            "body": "Producing dynamic webpages for non-profit and community organisations"
-                        },
-                        {
-                            "body": "Designing and maintaining in-house web sites"
-                        }
-                    ]
-                }
-            ]
-        }
-    ],
-
-    "education": [
-    ],
-    "skills": [
-        {
-            "title": "Web Development",
-            "items": [
-              {
-                "body": "React / Redux"
-              },
-              {
-                "body": "Javascript / ES6"
-              },
-              {
-                  "body": "HTML5 and CSS3"
-              },
-              {
-                  "body": "Sass and Less"
-              },
-              {
-                  "body": "Responsive web design using Susy and Bootstrap grids (and flex-box)"
-              },
-              {
-                  "body": "Decoupled web application development in javascript / node, PHP"
-              },
-              {
-                  "body": "Cross-browser development and testing"
-              },
-              {
-                  "body": "Progressive enhancement, accessibility and content-first approach"
-              },
-              {
-                  "body": "JavaScript libraries such as Backbone.js, JQuery, ExtJS"
-              },
-              {
-                  "body": "Geospatial mapping with Openlayers, GeoExt, Leaflet"
-              },
-              {
-                  "body": "Experienced in working with XML data and XSLT"
-              },
-              {
-                  "body": "MySQL, SQLite, and PostgreSQL databases"
-              }
-            ]
-        },
-        {
-            "title": "Software Development",
-            "items": [
-                {
-                    "body": "Leading agile/devops teams"
-                },
-                {
-                  "body": "Certified (and practicing) ScrumMaster"
-                },
-                {
-                    "body": "Virtual machine development environments with Vagrant"
-                },
-                {
-                    "body": "Project planning tools such as JIRA and Trello"
-                },
-                {
-                    "body": "Continuous integration tools such as Jenkins"
-                },
-                {
-                    "body": "Build tools such as Gulp, Yeoman and Ant"
-                },
-                {
-                    "body": "Testing tools such as Karma/Mocha, Codeception and PHPUnit"
-                },
-                {
-                    "body": "Programming experience in Perl, C++, Java"
-                }
-            ]
-        },
-        {
-            "title": "Cloud Servers / IaaS / Virtualization",
-            "items": [
-              {
-                "body": "Application development and deployment using AWS and Rackspace"
-              },
-              {
-                  "body": "Continuous integration Scaling app workloads "
-              },
-              {
-                  "body": "Experience with VMWare vSphere and OpenStack"
-              }
-            ]
-        }
+  "id": "jez-templeton",
+  "name": "Jez Templeton",
+  "avatar": "https://avatars0.githubusercontent.com/u/2906667",
+  "role": "Full Stack Developer / Agile Lead",
+  "contacts": {
+    "email": "jez@lostspiral.com",
+    "phone": "+61 411 299 094",
+    "github": "shaid/vitae",
+    "twitter": "notjez"
+  },
+  "header": [{
+    "title": "About Me",
+    "icon": "social-person",
+    "body": [
+      "I'm a full stack developer (yes, really) with over 13 years experience producing web software in a wide variety of industries."
     ]
+  }, {
+    "title": "What is this?",
+    "icon": "action-assignment-turned-in",
+    "body": [
+      "It's my resume.",
+      "Also, this was an attempt to write some massively over-engineered resume viewer as an effort to learn React.",
+      "@todo: Port this across to use redux and make it a universal node/javascript app."
+    ]
+  }],
+  "employment": [{
+    "role": "Digital Solutioneer",
+    "description": "",
+    "employer": {
+      "name": "Bureau of Meteorology",
+      "url": "www.bom.gov.au",
+      "location": "VIC"
+    },
+    "startDate": "2012-07-01",
+    "endDate": "now",
+    "sections": [{
+      "name": "Responsibilities",
+      "title": "I am responsible for ...",
+      "items": [{
+        "body": "Leading a devops team to produce user-focused applications"
+      }, {
+        "body": "Developing end-to-end, full-stack web application solutions for the Bureau's growing web presence"
+      }, {
+        "body": "Building the app framework that underpins the current generation of Bureau web applications"
+      }, {
+        "body": "Development of RESTful APIs to support web and mobile applications"
+      }, {
+        "body": "Redefining and redeveloping the service offering of the Defence and Aviation weather services"
+      }, {
+        "body": "Mentoring and guidance of the web solutions team"
+      }, {
+        "body": "Refining development processes and standards"
+      }, {
+        "body": "Development and maintenance of public web site"
+      }, {
+        "body": "Providing technical advice and assistance on WCAG accessibility matters"
+      }]
+    }, {
+      "name": "Accomplishments",
+      "title": "I accomplished ...",
+      "items": [{
+        "title": "Bureau's mobile website",
+        "url": "m.bom.gov.au",
+        "body": "A responsive site designed for mobile phones and tablets that utilises a new data API driven by a custom PHP framework."
+      }, {
+        "title": "Defence Product Visualiser",
+        "url": "reg.bom.gov.au/defence",
+        "body": "A tool that allows users to create customised card-based dashboards displaying a range of relevant weather products."
+      }, {
+        "title": "wxFramework",
+        "url": "www.bom.gov.au",
+        "body": "An in-house PHP framework custom built for building applications that utilise the large datasets the Bureau produces daily."
+      }]
+    }]
+  }, {
+    "role": "Development Lead",
+    "employer": {
+      "name": "O & C Marketing",
+      "url": "www.oandc.com.au",
+      "location": "VIC"
+    },
+    "startDate": "2008-03-01",
+    "endDate": "2012-06-01",
+    "sections": [{
+      "name": "Responsibilities",
+      "title": "I was responsible for ...",
+      "items": [{
+        "body": "Leading the development team in this agency environment"
+      }, {
+        "body": "Transitioning the dev team to an agile development approach"
+      }, {
+        "body": "Heavy client/user focused workload"
+      }, {
+        "body": "SaaS and web application development in PHP and JavaScript"
+      }, {
+        "body": "Web site design and development in XHTML and CSS"
+      }, {
+        "body": "Developing custom Smarty templates for in-house CMS"
+      }, {
+        "body": "Flash application and animation development"
+      }, {
+        "body": "Server administration for Apache and Microsoft IIS platforms"
+      }, {
+        "body": "Client liaison throughout the life cycle of projects"
+      }, {
+        "body": "Client training and ongoing site support"
+      }]
+    }, {
+      "name": "Accomplishments",
+      "title": "I accomplished ...",
+      "items": [{
+        "title": "Injury Master Platform",
+        "url": "...",
+        "body": "Injury Master is used by employers and case managers to improve the workflow of workplace injury assessments, recovery and back to work programs. Allowed generation of templated Word and Excel documents for WorkCover forms, medical appointments and similar. Tracked medical certificate expiry. "
+      }, {
+        "title": "Shop, Stock and Bill",
+        "url": "www.shopstockbill.com.au",
+        "body": "An intergrated online store and stock / inventory system. Allows integration with common accounting systems, creating a full end-to-end solution for the client."
+      }, {
+        "title": "Client Management System",
+        "url": "...",
+        "body": "A client management and marketing tool that allows targeted, customisable SMS and email marketing information to be delivered to hundreds of thousands of clients easily."
+      }]
+    }]
+  }, {
+    "role": "Freelance Developer",
+    "employer": {
+      "name": "Various clients",
+      "url": "www.lostspiral.com",
+      "location": "Melbourne, VIC"
+    },
+    "startDate": "2006-09-01",
+    "endDate": "2008-03-01",
+    "sections": [{
+      "name": "Responsibilities",
+      "title": "I was responsible for ...",
+      "items": [{
+        "body": "Developing server-side scripts and applications in PHP and Python"
+      }, {
+        "body": "Using JavaScript to produce dynamic interactive web applications"
+      }, {
+        "body": "Developing UI components in HTML and PHP with heavy use of CSS and JavaScript"
+      }, {
+        "body": "Developing public and internal web sites"
+      }, {
+        "body": "Creating and managing relational databases in MySQL"
+      }, {
+        "body": "Maintaining applications written in Java and C++"
+      }]
+    }]
+  }, {
+    "role": "Web / IT Project Supervisor",
+    "employer": {
+      "name": "Mission Australia",
+      "url": "www.missionaustralia.org.au",
+      "location": "VIC"
+    },
+    "startDate": "2003-12-01",
+    "endDate": "2006-09-01",
+    "sections": [{
+      "name": "Responsibilities",
+      "title": "I was responsible for ...",
+      "items": [{
+        "body": "Mentoring jobseekers, assiting them in gaining real-world Web and IT skills"
+      }, {
+        "body": "Producing dynamic web applications and websites for non-profit and community organisations"
+      }, {
+        "body": "Designing and maintaining in-house web sites"
+      }]
+    }]
+  }],
+
+  "education": [{
+    "course": "Certified Scrum Master",
+    "metadata": {
+      "url": "www.scrumology.com"
+    },
+    "date": "2014-02-01",
+    "description": ["Certified Scrum Master course run by Kane Mar / Scrumology"]
+  }, {
+    "course": "Bachelor of Computer Science",
+    "metadata": {
+      "venue": "RMIT University",
+      "location": "VIC",
+      "url": "www.rmit.edu.au"
+    },
+    "date": "2002-12-01",
+    "sections": [{
+      "name": "contents",
+      "title": "Course Contents",
+      "items": [{
+        "body": "Application development in Java, C, C++"
+      }, {
+        "body": "Game development and graphics programming"
+      }, {
+        "body": "Client / server web development"
+      }, {
+        "body": "Database design, normalisation and development"
+      }, {
+        "body": "Software Engineering practises"
+      }, {
+        "body": "Broadcast network design and engineering"
+      }]
+    }]
+  }],
+  "skills": [{
+    "title": "Web Development",
+    "items": [{
+      "body": "Universal React / Redux"
+    }, {
+      "body": "Backbone / Lodash"
+    }, {
+      "body": "Javascript / ES6"
+    }, {
+      "body": "HTML5 and CSS3"
+    }, {
+      "body": "SASS and LESS preprocessors"
+    }, {
+      "body": "Responsive web design using flex-box, bootstrap3"
+    }, {
+      "body": "Progressive enhancement, accessibility and content-first approach"
+    }, {
+      "body": "Decoupled web application development in javascript / node, PHP"
+    }, {
+      "body": "PHP framework development"
+    }, {
+      "body": "Cross-browser development and testing"
+    }, {
+      "body": "JavaScript libraries such as Backbone.js, JQuery, ExtJS"
+    }, {
+      "body": "Experienced generating HTML from XML data with XSLT"
+    }, {
+      "body": "Mongodb 'no-sql' databases"
+    }, {
+      "body": "MySQL, SQLite, and PostgreSQL relational databases"
+    }]
+  }, {
+    "title": "Software Development",
+    "items": [{
+      "body": "Leading agile scrumm / devops teams"
+    }, {
+      "body": "Certified (and practicing) Scrum Master"
+    }, {
+      "body": "Virtual machine development environments with Vagrant"
+    }, {
+      "body": "Project planning tools such as JIRA and Trello"
+    }, {
+      "body": "Continuous integration tools such as Jenkins"
+    }, {
+      "body": "Build tools such as Gulp, Yeoman and Ant"
+    }, {
+      "body": "Test-driven development using testing tools such as Karma/Mocha, Codeception and PHPUnit"
+    }, {
+      "body": "Programming experience in Perl, C++, Java"
+    }]
+  }, {
+    "title": "Cloud Servers / IaaS / Virtualization",
+    "items": [{
+      "body": "Application development and deployment using AWS and Rackspace"
+    }, {
+      "body": "Using cloud to properly distribute application workloads"
+    }, {
+      "body": "Experience building HA clusters with VMWare vSphere and OpenStack"
+    }]
+  }]
 }

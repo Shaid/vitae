@@ -20,7 +20,7 @@ A prepublish script will trigger and run browserify for you. This will create:
 
 Theme is in a separate repository.
 
-(Shaid/resume-style)[https://github.com/Shaid/resume-style]
+[Shaid/resume-style](https://github.com/Shaid/resume-style)
 
 ## Todo
 - Port to use ES6, Webpack, etc.

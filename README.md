@@ -16,5 +16,13 @@ This project serves two purposes.
 A prepublish script will trigger and run browserify for you. This will create:
 `dist/js/resume.js`
 
+## Theme
+
+Theme is in a separate repository.
+
+(Shaid/resume-style)[https://github.com/Shaid/resume-style]
+
 ## Todo
-Port building to `gulp`
+- Port to use ES6, Webpack, etc.
+- Refactor to use Redux. 
+- Add universal rendering.

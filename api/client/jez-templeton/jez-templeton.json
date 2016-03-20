@@ -13,7 +13,7 @@
     "title": "About Me",
     "icon": "social-person",
     "body": [
-      "I'm a full stack developer (yes, really) with over 13 years experience producing web software in a wide variety of industries."
+      "I'm a full stack developer with over 13 years experience producing web software in a wide variety of industries, and with experience leading agile teams."
     ]
   }, {
     "title": "What is this?",
@@ -127,7 +127,7 @@
     "role": "Freelance Developer",
     "employer": {
       "name": "Various clients",
-      "url": "www.lostspiral.com",
+      "url": "lostspiral.com",
       "location": "Melbourne, VIC"
     },
     "startDate": "2006-09-01",

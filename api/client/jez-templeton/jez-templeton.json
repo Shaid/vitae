@@ -2,7 +2,7 @@
   "id": "jez-templeton",
   "name": "Jez Templeton",
   "avatar": "https://avatars0.githubusercontent.com/u/2906667",
-  "role": "Full Stack Developer / Agile Lead",
+  "role": "Digital Lead / Full Stack Architect",
   "contacts": {
     "email": "jez@lostspiral.com",
     "phone": "+61 411 299 094",
@@ -13,7 +13,7 @@
     "title": "About Me",
     "icon": "social-person",
     "body": [
-      "I'm a full stack developer with over 13 years experience producing web software in a wide variety of industries, and with experience leading agile teams."
+      "I'm a full stack developer with over 16 years experience producing web software in a wide variety of industries, and with experience leading agile teams."
     ]
   }, {
     "title": "What is this?",
@@ -21,10 +21,56 @@
     "body": [
       "It's my resume.",
       "Also, this was an attempt to write some massively over-engineered resume viewer as an effort to learn React.",
-      "@todo: Port this across to use redux and make it a universal node/javascript app."
+      "@todo: Update the codebase for this. It's from 2015..."
     ]
   }],
   "employment": [{
+    "role": "Digital Solutions Lead",
+    "description": "",
+    "employer": {
+      "name": "Bureau of Meteorology",
+      "url": "www.bom.gov.au",
+      "location": "VIC"
+    },
+    "startDate": "2016-03-01",
+    "endDate": "now",
+    "sections": [{
+      "name": "Responsibilities",
+      "title": "I am responsible for ...",
+      "items": [{
+        "body": "Leading the digital solutions team that produces user-focused web and mobile applications"
+      }, {
+        "body": "Providing architectural and technical expertise for end-to-end delivery of modern full-stack digital solutions for the general public"
+      }, {
+        "body": "Engaging with the enterprise as a whole to improve the user and developer experiences for delivery of digital services"
+      }, {
+        "body": "Leading the implementation of a large-scale serverless cloud API platform providing RESTful APIs for both internal and external use"
+      }, {
+        "body": "Redefining and redeveloping the Bureau's digital service offering for the general public"
+      }, {
+        "body": "Defining governance and architectural principles around development processes and standards"
+      }, {
+        "body": "Mentoring and guidance of the digital solutions team"
+      }]
+    }, {
+      "name": "Accomplishments",
+      "title": "I accomplished ...",
+      "items": [{
+        "title": "BOM Weather",
+        "url": "bom.gov.au/app",
+        "body": "A multiple award winning Android and iOS application putting the Bureau's weather information into the hands of our users."
+      }, {
+        "title": "BOM Developer Portal and API Platform",
+        "url": "developer.bom.gov.au",
+        "body": "A modern platform allowing self-service access to the Bureau's upcoming API offerings, built using serverless architecture."
+      }, {
+        "title": "wxFramework",
+        "url": "www.bom.gov.au",
+        "body": "An in-house PHP framework custom built for building applications that utilise the large datasets the Bureau produces daily."
+      }]
+    }]
+  },
+  {
     "role": "Digital Solutioneer",
     "description": "",
     "employer": {
@@ -33,10 +79,10 @@
       "location": "VIC"
     },
     "startDate": "2012-07-01",
-    "endDate": "now",
+    "endDate": "2016-02-28",
     "sections": [{
       "name": "Responsibilities",
-      "title": "I am responsible for ...",
+      "title": "I was responsible for ...",
       "items": [{
         "body": "Leading a devops team to produce user-focused applications"
       }, {
@@ -73,7 +119,8 @@
         "body": "An in-house PHP framework custom built for building applications that utilise the large datasets the Bureau produces daily."
       }]
     }]
-  }, {
+  },
+  {
     "role": "Development Lead",
     "employer": {
       "name": "O & C Marketing",
@@ -172,8 +219,20 @@
   }],
 
   "education": [{
+    "course": "Certified Agilist - SAFe 4.5",
+    "metadata": {
+      "venue": "Scaled Agile",
+      "location": "VIC",
+      "url": "http://www.scaledagileframework.com/"
+    },
+    "date": "2017-05-01",
+    "description": ["Certified Agilist - Leading SAFe course run by Elabor8"]
+  },
+    {
     "course": "Certified Scrum Master",
     "metadata": {
+      "venue": "Scrumology",
+      "location": "VIC",
       "url": "www.scrumology.com"
     },
     "date": "2014-02-01",
@@ -207,11 +266,11 @@
   "skills": [{
     "title": "Web Development",
     "items": [{
-      "body": "Universal React / Redux"
+      "body": "React with Redux / MobX"
     }, {
-      "body": "Backbone / Lodash"
+      "body": "Javascript / ES6 / ES7"
     }, {
-      "body": "Javascript / ES6"
+      "body": "GraphQL using Relay"
     }, {
       "body": "HTML5 and CSS3"
     }, {
@@ -221,7 +280,7 @@
     }, {
       "body": "Progressive enhancement, accessibility and content-first approach"
     }, {
-      "body": "Decoupled web application development in javascript / node, PHP"
+      "body": "Decoupled web application development in javascript / node"
     }, {
       "body": "PHP framework development"
     }, {
@@ -231,7 +290,7 @@
     }, {
       "body": "Experienced generating HTML from XML data with XSLT"
     }, {
-      "body": "Mongodb 'no-sql' databases"
+      "body": "MongoDB noSQL database"
     }, {
       "body": "MySQL, SQLite, and PostgreSQL relational databases"
     }]

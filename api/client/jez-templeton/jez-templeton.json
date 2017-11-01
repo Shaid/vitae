@@ -63,10 +63,6 @@
         "title": "BOM Developer Portal and API Platform",
         "url": "developer.bom.gov.au",
         "body": "A modern platform allowing self-service access to the Bureau's upcoming API offerings, built using serverless architecture."
-      }, {
-        "title": "wxFramework",
-        "url": "www.bom.gov.au",
-        "body": "An in-house PHP framework custom built for building applications that utilise the large datasets the Bureau produces daily."
       }]
     }]
   },

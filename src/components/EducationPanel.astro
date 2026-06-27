@@ -1,0 +1,41 @@
+---
+import type { Education } from "@/types/resume";
+import FancyDate from "./FancyDate.astro";
+import DotPointer from "./DotPointer.astro";
+
+interface Props {
+  data: Education[];
+}
+
+const { data } = Astro.props;
+---
+
+<section class="mb-10">
+  <h2 class="text-xl font-bold text-gray-900 mb-4 border-b pb-2">Education</h2>
+  {data.map((course) => (
+    <article class="mb-6 pb-4 border-b border-gray-100 last:border-0">
+      <h3 class="text-lg font-semibold text-gray-900">{course.course}</h3>
+      {course.metadata.venue && (
+        <p class="text-sm text-gray-500">
+          📍 {course.metadata.venue}{course.metadata.location && `, ${course.metadata.location}`}
+        </p>
+      )}
+      {course.metadata.url && (
+        <p class="text-sm text-gray-500">
+          🔗 <a href={`http://${course.metadata.url}`} class="text-blue-600 hover:underline">{course.metadata.url}</a>
+        </p>
+      )}
+      {course.date && (
+        <p class="text-sm text-gray-500">
+          📅 Completed <FancyDate date={course.date} />
+        </p>
+      )}
+      {course.description && (
+        <p class="text-sm text-gray-600 mt-2">{course.description.join(" ")}</p>
+      )}
+      {course.sections?.map((section) => (
+        <DotPointer data={section} />
+      ))}
+    </article>
+  ))}
+</section>

@@ -1,0 +1,32 @@
+---
+import type { Employment } from "@/types/resume";
+import FancyDate from "./FancyDate.astro";
+import DotPointer from "./DotPointer.astro";
+
+interface Props {
+  data: Employment[];
+}
+
+const { data } = Astro.props;
+---
+
+<section class="mb-10">
+  <h2 class="text-xl font-bold text-gray-900 mb-4 border-b pb-2">Employment</h2>
+  {data.map((employment) => (
+    <article class="mb-8 pb-6 border-b border-gray-100 last:border-0">
+      <h3 class="text-lg font-semibold text-gray-900">{employment.role}</h3>
+      <p class="text-sm text-gray-500">
+        📍 {employment.employer.name}, {employment.employer.location}
+      </p>
+      <p class="text-sm text-gray-500">
+        📅 <FancyDate date={employment.startDate} /> &ndash; <FancyDate date={employment.endDate} />
+      </p>
+      <p class="text-sm text-gray-500">
+        🔗 <a href={`http://${employment.employer.url}`} class="text-blue-600 hover:underline">{employment.employer.url}</a>
+      </p>
+      {employment.sections.map((section) => (
+        <DotPointer data={section} />
+      ))}
+    </article>
+  ))}
+</section>

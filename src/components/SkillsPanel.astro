@@ -1,0 +1,23 @@
+---
+import type { SkillCategory } from "@/types/resume";
+
+interface Props {
+  data: SkillCategory[];
+}
+
+const { data } = Astro.props;
+---
+
+<section class="mb-10">
+  <h2 class="text-xl font-bold text-gray-900 mb-4 border-b pb-2">Skills</h2>
+  {data.map((category) => (
+    <article class="mb-4">
+      <h4 class="font-medium text-sm text-gray-600 mb-1">{category.title}</h4>
+      <ul class="list-disc list-inside space-y-1 text-sm">
+        {category.items.map((item) => (
+          <li>{item.body}</li>
+        ))}
+      </ul>
+    </article>
+  ))}
+</section>

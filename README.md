@@ -1,28 +1,45 @@
-# vitae
+# Vitae
 
-A resume; over-engineered.
+A resume viewer, overengineered — now built with Astro.
 
-## What is this?
-This project serves two purposes.
+## Tech Stack
 
-1. I need a new resume.
-2. I wanted to play around with some new tech, such as react and mongodb.
+- **Astro 5** (static site generation, zero JS by default)
+- **TypeScript**
+- **Tailwind CSS 4**
+- **date-fns** for date formatting
 
-**Vitae** is the result. It takes a resume (as JSON) and whacks it into the DOM with React.
+## Getting Started
+
+```bash
+npm install
+npm run dev
+```
+
+Open [http://localhost:4321](http://localhost:4321) — it redirects to the default resume.
 
 ## Building
-`npm install`
 
-A prepublish script will trigger and run browserify for you. This will create:
-`dist/js/resume.js`
+```bash
+npm run build
+```
 
-## Theme
+Produces a fully static site in the `dist/` directory.
 
-Theme is in a separate repository.
+## Adding a Resume
 
-[Shaid/resume-style](https://github.com/Shaid/resume-style)
+Add a JSON file to `src/data/` following the resume schema (see `docs/resume-schema.md`). The filename (without `.json`) becomes the URL slug: `/resume/<filename>`.
 
-## Todo
-- Port to use ES6, Webpack, etc.
-- Refactor to use Redux. 
-- Add universal rendering.
+## Project Structure
+
+```
+src/
+  components/       → Astro components
+  data/             → Resume JSON data files
+  layouts/          → Page layouts
+  lib/              → Data loading utilities
+  pages/            → File-based routing
+  types/            → TypeScript type definitions
+docs/               → Documentation
+public/             → Static assets
+```

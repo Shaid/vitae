@@ -1,0 +1,30 @@
+---
+import type { Section } from "@/types/resume";
+
+interface Props {
+  data: Section;
+}
+
+const { data } = Astro.props;
+---
+
+{data.items && data.items.length > 0 && (
+  <div>
+    <h4 class="font-medium text-sm text-gray-600 mt-3 mb-1">{data.title}</h4>
+    <ul class="list-disc list-inside space-y-1 text-sm">
+      {data.items.map((item) => (
+        <li>
+          {item.title && item.url && (
+            <span>
+              <strong>{item.title}</strong> &ndash;{" "}
+              <a href={`http://${item.url}`} class="text-blue-600 hover:underline">{item.url}</a>
+              <br />
+            </span>
+          )}
+          {item.title && !item.url && <strong>{item.title}: </strong>}
+          {item.body}
+        </li>
+      ))}
+    </ul>
+  </div>
+)}

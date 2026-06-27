@@ -1,0 +1,13 @@
+---
+import { format, parseISO } from "date-fns";
+
+interface Props {
+  date: string;
+}
+
+const { date } = Astro.props;
+
+const formatted = date === "now" ? "Present" : format(parseISO(date), "MMMM yyyy");
+---
+
+<span>{formatted}</span>

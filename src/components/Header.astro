@@ -1,0 +1,38 @@
+---
+import type { ResumeData } from "@/types/resume";
+
+interface Props {
+  resume: ResumeData;
+}
+
+const { resume } = Astro.props;
+---
+
+<aside class="bg-white p-6 rounded-lg shadow-sm">
+  <header class="mb-8">
+    <h1 class="text-2xl font-bold text-gray-900">{resume.name}</h1>
+    {resume.role && <h2 class="text-md text-gray-600 mt-1">{resume.role}</h2>}
+  </header>
+
+  {resume.header.map((content) => (
+    <section class="mb-6">
+      <h2 class="text-lg font-semibold text-gray-800 mb-2">{content.title}</h2>
+      {content.body.map((paragraph) => (
+        <p class="text-sm text-gray-600 mb-1">{paragraph}</p>
+      ))}
+    </section>
+  ))}
+
+  <section class="mb-6">
+    <h2 class="text-lg font-semibold text-gray-800 mb-2">Contact</h2>
+    <div class="space-y-1 text-sm text-gray-600">
+      <p>
+        ✉ <a href={`mailto:${resume.contacts.email}`} class="text-blue-600 hover:underline">{resume.contacts.email}</a>
+      </p>
+      <p>☎ {resume.contacts.phone}</p>
+      <p>
+        ⌨ <a href={`https://github.com/${resume.contacts.github}`} class="text-blue-600 hover:underline">{resume.contacts.github} @ GitHub</a>
+      </p>
+    </div>
+  </section>
+</aside>

@@ -3,7 +3,7 @@ var Backbone = require('backbone');
 Backbone.$ = $;
 
 var Router = Backbone.Router.extend({
-    DEFAULT_CLIENT: 'jez-templeton',
+    DEFAULT_CLIENT: 'cassandra-templeton',
     
     routes: {
         "!/resume/:client": "viewResume",

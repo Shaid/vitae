@@ -1,6 +1,6 @@
 # Vitae Resume JSON Schema
 
-This document describes the JSON data format used by Vitae for storing and rendering resume data. Each resume is a single JSON file placed in the data directory, named with a URL-friendly slug (e.g., `cassandra-templeton.json`). The filename determines the URL path — a file named `cassandra-templeton.json` becomes accessible at `/resume/cassandra-templeton`.
+This document describes the JSON data format used by Vitae for storing and rendering resume data. Each resume is a single JSON file placed in the data directory, named with a URL-friendly slug (e.g., `alex-johnson.json`). The filename determines the URL path — a file named `alex-johnson.json` becomes accessible at `/resume/alex-johnson`.
 
 ---
 
@@ -10,8 +10,8 @@ The top-level object represents a single person's complete resume.
 
 | Field        | Type              | Required | Description                                      |
 |--------------|-------------------|----------|--------------------------------------------------|
-| `id`         | `string`          | ✅       | URL-friendly identifier matching the filename (without `.json`). Used internally for routing and lookups. Must be lowercase, hyphenated (e.g., `"cassandra-templeton"`). |
-| `name`       | `string`          | ✅       | The person's full display name as it should appear on the resume (e.g., `"Cassandra Templeton"`). |
+| `id`         | `string`          | ✅       | URL-friendly identifier matching the filename (without `.json`). Used internally for routing and lookups. Must be lowercase, hyphenated (e.g., `"alex-johnson"`). |
+| `name`       | `string`          | ✅       | The person's full display name as it should appear on the resume (e.g., `"Alex Johnson"`). |
 | `avatar`     | `string`          | ✅       | Absolute URL to a profile/avatar image. Can be any publicly accessible image URL (GitHub avatars, Gravatar, etc.). |
 | `role`       | `string`          | ❌       | Current professional title or tagline displayed beneath the name. Omit if you prefer to let employment history speak for itself. |
 | `contacts`   | `Contacts`        | ✅       | Contact details displayed in the sidebar.        |
@@ -24,10 +24,10 @@ The top-level object represents a single person's complete resume.
 
 ```json
 {
-  "id": "cassandra-templeton",
-  "name": "Cassandra Templeton",
+  "id": "alex-johnson",
+  "name": "Alex Johnson",
   "avatar": "https://avatars0.githubusercontent.com/u/2906667",
-  "role": "Forecast Quality Tech Lead",
+  "role": "Engineering Lead",
   "contacts": { ... },
   "header": [ ... ],
   "employment": [ ... ],
@@ -45,7 +45,7 @@ Contact information displayed in the resume sidebar. All contact fields are rend
 | Field     | Type     | Required | Description                                              |
 |-----------|----------|----------|----------------------------------------------------------|
 | `email`   | `string` | ✅       | Email address. Rendered as a `mailto:` link.             |
-| `phone`   | `string` | ✅       | Phone number in international format (e.g., `"+61 411 299 094"`). |
+| `phone`   | `string` | ✅       | Phone number in international format (e.g., `"+1 555 987 6543"`). |
 | `github`  | `string` | ✅       | GitHub username or `org/repo` path. Linked to `https://github.com/<value>`. |
 | `twitter` | `string` | ❌       | Twitter/X handle (without `@`).                          |
 
@@ -53,10 +53,10 @@ Contact information displayed in the resume sidebar. All contact fields are rend
 
 ```json
 {
-  "email": "cassandra@lostspiral.com",
-  "phone": "+61 411 299 094",
-  "github": "shaid/vitae",
-  "twitter": "notcassandra"
+  "email": "alex@example.com",
+  "phone": "+1 555 987 6543",
+  "github": "alexjohnson",
+  "twitter": "alexj"
 }
 ```
 
@@ -104,7 +104,7 @@ Each entry represents a single role at a single employer. If you held multiple r
 
 | Field        | Type        | Required | Description                                                    |
 |--------------|-------------|----------|----------------------------------------------------------------|
-| `role`       | `string`    | ✅       | Job title as it should appear (e.g., `"Forecast Quality Tech Lead"`, `"Senior Web Developer"`). |
+| `role`       | `string`    | ✅       | Job title as it should appear (e.g., `"Engineering Lead"`, `"Senior Web Developer"`). |
 | `description`| `string`    | ❌       | Optional brief summary of the role. Displayed beneath the title if provided. Most users prefer to convey this through the `sections` field instead. |
 | `employer`   | `Employer`  | ✅       | Details about the company/organisation.                        |
 | `startDate`  | `string`    | ✅       | When the role began, in ISO 8601 format (`YYYY-MM-DD`). The day component is typically `01` since most people only track month granularity (e.g., `"2021-07-01"`). |
@@ -115,10 +115,10 @@ Each entry represents a single role at a single employer. If you held multiple r
 
 ```json
 {
-  "role": "Forecast Quality Tech Lead",
+  "role": "Engineering Lead",
   "employer": {
-    "name": "Bureau of Meteorology",
-    "url": "www.bom.gov.au",
+    "name": "Greenfield Technologies",
+    "url": "www.greenfield.dev",
     "location": "VIC"
   },
   "startDate": "2021-07-01",
@@ -137,13 +137,13 @@ Each entry represents a single role at a single employer. If you held multiple r
       "title": "I accomplished ...",
       "items": [
         {
-          "title": "Jive - VerificationHub",
-          "url": "bom.gov.au",
-          "body": "Jive provides users with an interactive data verification environment and easy access to over 8 years of forecast and observation data."
+          "title": "DataViz Platform",
+          "url": "greenfield.dev",
+          "body": "DataViz provides users with an interactive data verification environment and easy access to over 8 years of forecast and observation data."
         },
         {
-          "title": "Insight and Innovation Award - Bureau Excellence Awards",
-          "body": "Awarded for sustained excellence in improving the Jive forecast verification system."
+          "title": "Innovation Award - Company Excellence Awards",
+          "body": "Awarded for sustained excellence in improving the DataViz forecast verification system."
         }
       ]
     }
@@ -158,7 +158,7 @@ Each entry represents a single role at a single employer. If you held multiple r
   "role": "Freelance Developer",
   "employer": {
     "name": "Various clients",
-    "url": "lostspiral.com",
+    "url": "example.com",
     "location": "Melbourne, VIC"
   },
   "startDate": "2006-09-01",
@@ -182,8 +182,8 @@ Details about the company or organisation where the role was held.
 
 | Field      | Type     | Required | Description                                                |
 |------------|----------|----------|------------------------------------------------------------|
-| `name`     | `string` | ✅       | Company or organisation name (e.g., `"Bureau of Meteorology"`, `"O & C Marketing"`). |
-| `url`      | `string` | ✅       | Company website domain without protocol (e.g., `"www.bom.gov.au"`). The renderer prepends `http://`. |
+| `name`     | `string` | ✅       | Company or organisation name (e.g., `"Greenfield Technologies"`, `"Digital Agency Co"`). |
+| `url`      | `string` | ✅       | Company website domain without protocol (e.g., `"www.greenfield.dev"`). The renderer prepends `http://`. |
 | `location` | `string` | ✅       | Location — can be as specific or general as you like (e.g., `"VIC"`, `"Melbourne, VIC"`, `"San Francisco, CA"`). |
 
 ---
@@ -206,9 +206,9 @@ Each entry represents a qualification, certification, or training course. Educat
 {
   "course": "Bachelor of Computer Science",
   "metadata": {
-    "venue": "RMIT University",
+    "venue": "State University",
     "location": "VIC",
-    "url": "www.rmit.edu.au"
+    "url": "www.stateuniversity.edu"
   },
   "date": "2002-12-01",
   "sections": [
@@ -233,12 +233,12 @@ Each entry represents a qualification, certification, or training course. Educat
 {
   "course": "Certified Scrum Master",
   "metadata": {
-    "venue": "Scrumology",
+    "venue": "Agile Academy",
     "location": "VIC",
-    "url": "www.scrumology.com"
+    "url": "www.agileacademy.com"
   },
   "date": "2014-02-01",
-  "description": ["Certified Scrum Master course run by Kane Mar / Scrumology"]
+  "description": ["Certified Scrum Master course run by a certified trainer / Agile Academy"]
 }
 ```
 
@@ -261,9 +261,9 @@ Metadata about the institution that provided the qualification. All fields are o
 
 | Field      | Type     | Required | Description                                                    |
 |------------|----------|----------|----------------------------------------------------------------|
-| `venue`    | `string` | ❌       | Institution or provider name (e.g., `"RMIT University"`, `"Coursera"`, `"Scaled Agile"`). Omit for self-study or well-known certifications where the URL is sufficient. |
+| `venue`    | `string` | ❌       | Institution or provider name (e.g., `"State University"`, `"Coursera"`, `"Agile Institute"`). Omit for self-study or well-known certifications where the URL is sufficient. |
 | `location` | `string` | ❌       | Physical location if applicable (e.g., `"VIC"`, `"Online"`). Omit for online-only courses. |
-| `url`      | `string` | ❌       | Website without protocol (e.g., `"www.rmit.edu.au"`). The renderer prepends `http://`. |
+| `url`      | `string` | ❌       | Website without protocol (e.g., `"www.stateuniversity.edu"`). The renderer prepends `http://`. |
 
 ---
 
@@ -348,14 +348,14 @@ You can have as many sections per employment/education entry as you need. Common
   "title": "I accomplished ...",
   "items": [
     {
-      "title": "BOM Weather App",
-      "url": "bom.gov.au/app",
-      "body": "A multiple award winning Android and iOS application putting the Bureau's weather information into the hands of our users."
+      "title": "Mobile Weather App",
+      "url": "greenfield.dev/app",
+      "body": "A multiple award winning Android and iOS application putting the company's data into the hands of our users."
     },
     {
       "title": "Developer Portal",
-      "url": "developer.bom.gov.au",
-      "body": "A modern platform allowing self-service access to the Bureau's upcoming API offerings, built using serverless architecture."
+      "url": "developer.greenfield.dev",
+      "body": "A modern platform allowing self-service access to the company's API offerings, built using serverless architecture."
     }
   ]
 }
@@ -369,8 +369,8 @@ The atomic unit of content within a section. At minimum, each item has a `body` 
 
 | Field  | Type     | Required | Description                                                    |
 |--------|----------|----------|----------------------------------------------------------------|
-| `title`| `string` | ❌       | Bold title displayed before the body text. Use for project names, award titles, or anything that deserves emphasis (e.g., `"BOM Weather App"`, `"Platform Migration"`). |
-| `url`  | `string` | ❌       | Link URL without protocol (e.g., `"developer.bom.gov.au"`). Rendered as a clickable link next to the title. Only meaningful when `title` is also provided. |
+| `title`| `string` | ❌       | Bold title displayed before the body text. Use for project names, award titles, or anything that deserves emphasis (e.g., `"Mobile Weather App"`, `"Platform Migration"`). |
+| `url`  | `string` | ❌       | Link URL without protocol (e.g., `"developer.greenfield.dev"`). Rendered as a clickable link next to the title. Only meaningful when `title` is also provided. |
 | `body` | `string` | ✅       | The main description text. For items without a `title`, this is the entire content. For items with a `title`, this appears after the title as supporting detail. |
 
 **Example — simple body-only items (most common for responsibilities and skills):**
@@ -388,8 +388,8 @@ The atomic unit of content within a section. At minimum, each item has a `body` 
 ```json
 [
   {
-    "title": "VerificationHub",
-    "url": "bom.gov.au",
+    "title": "DataViz Platform",
+    "url": "greenfield.dev",
     "body": "An interactive data verification environment providing access to 8+ years of forecast and observation data."
   },
   {
@@ -406,8 +406,8 @@ The atomic unit of content within a section. At minimum, each item has a `body` 
   { "body": "Winner - 2014 Geospatial World Technology Innovation Award (Meteorology)" },
   { "body": "Finalist - 2014 Asia-Pacific Spatial Excellence Awards" },
   {
-    "title": "Victorian Spatial Excellence Awards",
-    "url": "www.sssi.org.au",
+    "title": "Industry Excellence Awards",
+    "url": "www.example-awards.org",
     "body": "Winner of the 2013 Technical Excellence Award for geospatial web application development."
   }
 ]
@@ -421,15 +421,15 @@ A full resume demonstrating all features of the schema:
 
 ```json
 {
-  "id": "cassandra-templeton",
-  "name": "Cassandra Templeton",
+  "id": "alex-johnson",
+  "name": "Alex Johnson",
   "avatar": "https://avatars0.githubusercontent.com/u/2906667",
-  "role": "Forecast Quality Tech Lead",
+  "role": "Engineering Lead",
   "contacts": {
-    "email": "cassandra@lostspiral.com",
-    "phone": "+61 411 299 094",
-    "github": "shaid/vitae",
-    "twitter": "notcassandra"
+    "email": "alex@example.com",
+    "phone": "+1 555 987 6543",
+    "github": "alexjohnson",
+    "twitter": "alexj"
   },
   "header": [
     {
@@ -451,10 +451,10 @@ A full resume demonstrating all features of the schema:
   ],
   "employment": [
     {
-      "role": "Forecast Quality Tech Lead",
+      "role": "Engineering Lead",
       "employer": {
-        "name": "Bureau of Meteorology",
-        "url": "www.bom.gov.au",
+        "name": "Greenfield Technologies",
+        "url": "www.greenfield.dev",
         "location": "VIC"
       },
       "startDate": "2021-07-01",
@@ -474,13 +474,13 @@ A full resume demonstrating all features of the schema:
           "title": "I accomplished ...",
           "items": [
             {
-              "title": "Jive - VerificationHub",
-              "url": "bom.gov.au",
-              "body": "Jive provides users with an interactive data verification environment and easy access to over 8 years of forecast and observation data."
+              "title": "DataViz Platform",
+              "url": "greenfield.dev",
+              "body": "DataViz provides users with an interactive data verification environment and easy access to over 8 years of forecast and observation data."
             },
             {
               "title": "Insight and Innovation Award",
-              "body": "Awarded for sustained excellence in improving the Jive forecast verification system."
+              "body": "Awarded for sustained excellence in improving the DataViz forecast verification system."
             }
           ]
         }
@@ -489,8 +489,8 @@ A full resume demonstrating all features of the schema:
     {
       "role": "Digital Solutions Lead",
       "employer": {
-        "name": "Bureau of Meteorology",
-        "url": "www.bom.gov.au",
+        "name": "Greenfield Technologies",
+        "url": "www.greenfield.dev",
         "location": "VIC"
       },
       "startDate": "2016-03-01",
@@ -509,9 +509,9 @@ A full resume demonstrating all features of the schema:
           "title": "I accomplished ...",
           "items": [
             {
-              "title": "BOM Weather",
-              "url": "bom.gov.au/app",
-              "body": "A multiple award winning Android and iOS application putting the Bureau's weather information into the hands of our users."
+              "title": "Mobile Weather App",
+              "url": "greenfield.dev/app",
+              "body": "A multiple award winning Android and iOS application putting the company's data into the hands of our users."
             }
           ]
         }
@@ -522,19 +522,19 @@ A full resume demonstrating all features of the schema:
     {
       "course": "Certified Agilist - SAFe 4.5",
       "metadata": {
-        "venue": "Scaled Agile",
+        "venue": "Agile Institute",
         "location": "VIC",
-        "url": "www.scaledagileframework.com"
+        "url": "www.example-agile.com"
       },
       "date": "2017-05-01",
-      "description": ["Certified Agilist - Leading SAFe course run by Elabor8"]
+      "description": ["Certified Agilist - Leading SAFe course run by a certified training provider"]
     },
     {
       "course": "Bachelor of Computer Science",
       "metadata": {
-        "venue": "RMIT University",
+        "venue": "State University",
         "location": "VIC",
-        "url": "www.rmit.edu.au"
+        "url": "www.stateuniversity.edu"
       },
       "date": "2002-12-01",
       "sections": [
@@ -590,5 +590,5 @@ A full resume demonstrating all features of the schema:
 - **Ordering** is significant — items render in array order. Place most recent entries first for employment and education. Skills categories render top-to-bottom.
 - **The `icon` field** in HeaderSection is a legacy field from the original Material Design Icons implementation. Modern renderers may ignore it or map it to an icon library of their choice (e.g., Lucide, Heroicons).
 - **Empty sections** (where `items` is `[]`) are automatically hidden by the renderer. You can include them in the data for completeness without affecting the displayed output.
-- **The `id` field** must match the filename. If your file is `cassandra-templeton.json`, the `id` must be `"cassandra-templeton"`. This is used for routing and internal lookups.
+- **The `id` field** must match the filename. If your file is `alex-johnson.json`, the `id` must be `"alex-johnson"`. This is used for routing and internal lookups.
 - **Multiple roles at one employer** should be separate employment entries, each with their own date range. This makes career progression clear.

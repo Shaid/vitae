@@ -1,6 +1,6 @@
 # Vitae Resume JSON Schema
 
-This document describes the JSON data format used by Vitae for storing and rendering resume data. Each resume is a single JSON file placed in the data directory, named with a URL-friendly slug (e.g., `alex-johnson.json`). The filename determines the URL path — a file named `alex-johnson.json` becomes accessible at `/resume/alex-johnson`.
+This document describes the JSON data format used by Vitae for storing and rendering resume data. Each resume is a single JSON file placed in the data directory, named with a URL-friendly slug (e.g., `maya-patel.json`). The filename determines the URL path — a file named `maya-patel.json` becomes accessible at `/resume/maya-patel`.
 
 ---
 
@@ -10,8 +10,8 @@ The top-level object represents a single person's complete resume.
 
 | Field        | Type              | Required | Description                                      |
 |--------------|-------------------|----------|--------------------------------------------------|
-| `id`         | `string`          | ✅       | URL-friendly identifier matching the filename (without `.json`). Used internally for routing and lookups. Must be lowercase, hyphenated (e.g., `"alex-johnson"`). |
-| `name`       | `string`          | ✅       | The person's full display name as it should appear on the resume (e.g., `"Alex Johnson"`). |
+| `id`         | `string`          | ✅       | URL-friendly identifier matching the filename (without `.json`). Used internally for routing and lookups. Must be lowercase, hyphenated (e.g., `"maya-patel"`). |
+| `name`       | `string`          | ✅       | The person's full display name as it should appear on the resume (e.g., `"Maya Patel"`). |
 | `avatar`     | `string`          | ✅       | Absolute URL to a profile/avatar image. Can be any publicly accessible image URL (GitHub avatars, Gravatar, etc.). |
 | `role`       | `string`          | ❌       | Current professional title or tagline displayed beneath the name. Omit if you prefer to let employment history speak for itself. |
 | `contacts`   | `Contacts`        | ✅       | Contact details displayed in the sidebar.        |
@@ -24,8 +24,8 @@ The top-level object represents a single person's complete resume.
 
 ```json
 {
-  "id": "alex-johnson",
-  "name": "Alex Johnson",
+  "id": "maya-patel",
+  "name": "Maya Patel",
   "avatar": "https://avatars0.githubusercontent.com/u/2906667",
   "role": "Engineering Lead",
   "contacts": { ... },
@@ -53,10 +53,10 @@ Contact information displayed in the resume sidebar. All contact fields are rend
 
 ```json
 {
-  "email": "alex@example.com",
+  "email": "maya@example.com",
   "phone": "+1 555 987 6543",
-  "github": "alexjohnson",
-  "twitter": "alexj"
+  "github": "mayapatel",
+  "twitter": "mayap"
 }
 ```
 
@@ -421,15 +421,15 @@ A full resume demonstrating all features of the schema:
 
 ```json
 {
-  "id": "alex-johnson",
-  "name": "Alex Johnson",
+  "id": "maya-patel",
+  "name": "Maya Patel",
   "avatar": "https://avatars0.githubusercontent.com/u/2906667",
   "role": "Engineering Lead",
   "contacts": {
-    "email": "alex@example.com",
+    "email": "maya@example.com",
     "phone": "+1 555 987 6543",
-    "github": "alexjohnson",
-    "twitter": "alexj"
+    "github": "mayapatel",
+    "twitter": "mayap"
   },
   "header": [
     {
@@ -590,5 +590,5 @@ A full resume demonstrating all features of the schema:
 - **Ordering** is significant — items render in array order. Place most recent entries first for employment and education. Skills categories render top-to-bottom.
 - **The `icon` field** in HeaderSection is a legacy field from the original Material Design Icons implementation. Modern renderers may ignore it or map it to an icon library of their choice (e.g., Lucide, Heroicons).
 - **Empty sections** (where `items` is `[]`) are automatically hidden by the renderer. You can include them in the data for completeness without affecting the displayed output.
-- **The `id` field** must match the filename. If your file is `alex-johnson.json`, the `id` must be `"alex-johnson"`. This is used for routing and internal lookups.
+- **The `id` field** must match the filename. If your file is `maya-patel.json`, the `id` must be `"maya-patel"`. This is used for routing and internal lookups.
 - **Multiple roles at one employer** should be separate employment entries, each with their own date range. This makes career progression clear.

@@ -4,4 +4,4 @@ node_modules/*
 dist/api
 dist/css
 dist/fonts
-dist/js/*
+dist/js/*.astro/

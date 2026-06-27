@@ -9,7 +9,7 @@
     "build": "astro build",
     "preview": "astro preview"
   },
-  "author": "Jez Templeton",
+  "author": "Cassandra Templeton",
   "license": "BSD-2-Clause",
   "dependencies": {
     "astro": "^5.0.0",

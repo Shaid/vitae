@@ -9,7 +9,7 @@
     "start": "next start",
     "lint": "next lint"
   },
-  "author": "Jez Templeton",
+  "author": "Cassandra Templeton",
   "license": "BSD-2-Clause",
   "dependencies": {
     "next": "^15.3.0",

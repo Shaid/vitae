@@ -1,7 +1,5 @@
-nbproject/*
-vendor/*
-node_modules/*
-dist/api
-dist/css
-dist/fonts
-dist/js/*
+node_modules/
+.next/
+out/
+dist/
+.env*.local

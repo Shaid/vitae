@@ -1,28 +1,43 @@
-# vitae
+# Vitae
 
-A resume; over-engineered.
+A resume viewer, overengineered — now built with modern React tooling.
 
-## What is this?
-This project serves two purposes.
+## Tech Stack
 
-1. I need a new resume.
-2. I wanted to play around with some new tech, such as react and mongodb.
+- **Next.js 15** (App Router, static export)
+- **React 19** (functional components, server components)
+- **TypeScript**
+- **Tailwind CSS 4**
+- **date-fns** for date formatting
 
-**Vitae** is the result. It takes a resume (as JSON) and whacks it into the DOM with React.
+## Getting Started
+
+```bash
+npm install
+npm run dev
+```
+
+Open [http://localhost:3000](http://localhost:3000) — it redirects to the default resume.
 
 ## Building
-`npm install`
 
-A prepublish script will trigger and run browserify for you. This will create:
-`dist/js/resume.js`
+```bash
+npm run build
+```
 
-## Theme
+Produces a fully static export in the `out/` directory.
 
-Theme is in a separate repository.
+## Adding a Resume
 
-[Shaid/resume-style](https://github.com/Shaid/resume-style)
+Add a JSON file to `data/` following the resume schema (see `docs/resume-schema.md`). The filename (without `.json`) becomes the URL slug: `/resume/<filename>`.
 
-## Todo
-- Port to use ES6, Webpack, etc.
-- Refactor to use Redux. 
-- Add universal rendering.
+## Project Structure
+
+```
+app/                  → Next.js App Router pages
+components/           → React components
+data/                 → Resume JSON data files
+docs/                 → Documentation
+lib/                  → Data loading utilities
+types/                → TypeScript type definitions
+```
